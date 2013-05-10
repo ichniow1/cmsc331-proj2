@@ -2,17 +2,27 @@ package com.example.proj3;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
-import android.widget.TextView;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+
 
 public class MainActivity extends Activity {
-
+	
+	Button btnRules, btnPlay;
+	
     @Override
     public void onCreate(Bundle savedInstanceState) {
     	super.onCreate(savedInstanceState);
-        TextView text = new TextView(this);
-        text.setText("Hello World!");
-        setContentView(text);
+    	setContentView(R.layout.activity_main);
+    	btnRules = (Button) findViewById(R.id.btnRules);
+    	btnPlay = (Button) findViewById(R.id.btnPlay);
+    	
+    	btnRules.setOnClickListener(new ButtonListener());
+    	btnPlay.setOnClickListener(new ButtonListener());
+    	
     }
 
 
@@ -22,5 +32,23 @@ public class MainActivity extends Activity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
+    
+    
+    private class ButtonListener implements OnClickListener
+    {
+    	
+
+		@Override
+		public void onClick(View V) {
+			if (V.getId() == R.id.btnRules) {
+				startActivity(new Intent(MainActivity.this, Rules.class));
+			} else if (V.getId() == R.id.btnPlay) {
+				
+			}
+			
+		}
+    	
+    }
+
     
 }
