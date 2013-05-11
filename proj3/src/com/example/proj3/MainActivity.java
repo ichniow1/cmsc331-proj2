@@ -37,13 +37,13 @@ public class MainActivity extends Activity {
     private class ButtonListener implements OnClickListener
     {
     	
-
+    	
 		@Override
 		public void onClick(View V) {
 			if (V.getId() == R.id.btnRules) {
 				startActivity(new Intent(MainActivity.this, Rules.class));
 			} else if (V.getId() == R.id.btnPlay) {
-				
+
 			}
 			
 		}

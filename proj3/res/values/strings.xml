@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">proj3</string>
+    <string name="app_name">Snake</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="button_exit">Exit</string>
     <string name="button_rules">Rules</string>
     <string name="button_play">Play</string>
     <string name="title_activity_rules">Rules</string>
+    <string name="rules_text">\tControl the snake with the arrow keys. Have the snake head hit the object on screen to eat it, increasing in size (and increasing your score). The game ends if you hit a wall or collide with yourself.</string>
+    <string name="button_back">Back</string>
+    <string name="rules_header">Rules</string>
+    <string name="rules_return_instructions">Press back to go back. </string>
+    <string name="snake_bg_description">BG Image of a Snake</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 
 </resources>

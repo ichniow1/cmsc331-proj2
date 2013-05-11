@@ -24,4 +24,13 @@
         android:layout_alignParentLeft="true"
         android:text="@string/button_play" />
 
+    <ImageView
+        android:id="@+id/ivSnakeBG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/snake_bg_description"
+        android:src="@drawable/snake_bg" />
+
 </RelativeLayout>
